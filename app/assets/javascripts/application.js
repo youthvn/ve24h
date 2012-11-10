@@ -16,5 +16,9 @@
 //= require js/bootstrap-dropdown.js
 //= require js/bootstrap-twipsy.js
 //= require js/bootstrap-scrollspy.js
+//= require js/bootstrap-tooltip.js
 // require_tree .
-$(function () { prettyPrint() })
+$(function () { prettyPrint() });
+$(document).ready(function(){
+	$("[rel=tooltip]").tooltip();
+});
