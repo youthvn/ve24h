@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>VIETSKY - Vút Bay</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<%= stylesheet_link_tag    "application", :media =>
+	"all" %>
+	<%= csrf_meta_tags %>
+	<link rel="shortcut icon" href="/assets/ico/favicon.ico">
+	<link rel="apple-touch-icon" href="ico/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/ico/apple-touch-icon-114x114.png"></head>
+<body id="bootstrap-js">
+	<div class="topbar">
+		<div class="fill">
+			<div class="container">
+				<a class="brand" href="/"></a>
+				<ul class="nav">
+					<li style="margin-left:69px;"><a><i class="icon-star icon-white"></i>VE24H.VN</a></li>
+				</ul>
+				<ul class="nav" style="float :right">
+					<li class="active">
+						<a href="#tongtaitructuyen"> <i class="icon-home icon-white"></i>
+							Tổng Đài Hỗ Trợ
+						</a>
+					</li>
+					<li>
+						<a href="#datvetructuyen"> <i class="icon-tag icon-white"></i>
+							Đặt Vé Trực Tuyến
+						</a>
+					</li>
+					<li>
+						<a href="#hotrotructuyen">
+							<i class="icon-user icon-white"></i>
+							Hỗ Trợ Trực Tuyến
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container canvas">
+		<section id="datvetructuyen">
+			<center style="margin-top:-50px">
+				<img src="/assets/logo.png" style="margin-left: 120px;margin-top: 4px;position:absolute" height="100">
+				<br />
+				<img src="/assets/tongdai.png" style="margin-top:15px"></center>
+		</section>
+		<%= yield %>
+		<footer>
+			<p>&copy; Develop and Design by Youth Application</p>
+		</footer>
+	</div>
+	<!-- /container -->
+	<%= javascript_include_tag "application" %></body>
+	<a href="#" rel="tooltip" data-placement="top" data-original-title="Tooltip on top">Tooltip on top</a>
+</html>
